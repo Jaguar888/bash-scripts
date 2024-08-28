@@ -1,5 +1,6 @@
-echo "Displaying all users now."
-cat /etc/passwd | grep home  |cut -d: -f1
+getent passwd | awk -F ':' '{print $1}'echo "Displaying all users now."
+awk '{username}' /etc/passwd
+
 read -r -p "Would you like to remove a user? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then
@@ -7,5 +8,5 @@ then
     read user
     deluser "$user"
 else
-    echo "Program Complete. Or you failed to Remove a user..."
+    echo "Program Complete."
 fi

@@ -1,0 +1,13 @@
+echo "Displaying all users now."
+awk '{print}' /etc/passwd
+echo "Would you like to remove a user? y/n"
+read answerif answer == "y":
+ echo "User to be removed: "
+ read varname
+ deluser "$varname"
+ echo "Removed. Run again to remove someone else."
+fi
+elif answer == "n":
+ echo "Program Complete."
+fi
+done
