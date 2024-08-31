@@ -1,7 +1,5 @@
 #! /bin/bash
 
-yes | sudo apt install openssh-server
-yes | sudo apt install openssh-client
 yes | sudo apt install openssl
 sudo ufw enable
 sudo bash change_pass.sh
