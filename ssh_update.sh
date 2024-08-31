@@ -4,8 +4,8 @@ sudo mkdir /var/lib/sshd
 sudo chmod -R 700 /var/lib/sshd/
 sudo chown -R root:sys /var/lib/sshd/
 wget -c https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz
-tar -xzf openssh-8.0p1.tar.gz
-cd openssh-8.0p1/
+tar -xzf openssh-9.8p1.tar.gz
+cd openssh-9.8p1/
 sudo apt install libpam0g-dev libselinux1-dev
 ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/var/lib/sshd/ --sysconfdir=/etc/ssh
 make
