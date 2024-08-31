@@ -10,3 +10,4 @@ sudo cp -f RootLoginDenial.txt /etc/ssh/sshd_config #permit root login no
 sudo cp -f SetLockout.txt /etc/pam.d/common-auth #permit root login no
 yes | sudo apt install openssh-server
 yes | sudo apt install openssh-client
+sudo bash firefox_updater.sh
