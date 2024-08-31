@@ -1,3 +1,6 @@
+$current_dir='pwd'
+$current_dir+='/SSHDSetup.txt'
+echo $current_dir
 wget https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz
 sudo systemctl stop sshd
 yes | sudo apt-get remove openssh-server openssh-client
