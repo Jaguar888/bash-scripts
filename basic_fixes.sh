@@ -1,5 +1,6 @@
 #! /bin/bash
 
+sudo bash change_pass.sh
 yes | sudo apt install openssl
 sudo ufw enable
 sudo bash change_pass.sh
